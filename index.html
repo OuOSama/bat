@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen flex items-center justify-center">
+    <div class="flex flex-col items-center justify-center gap-10">
+      <div class="flex flex-row gap-10">
+        <!-- ========== LEFT ==========-->
+        <div class="flex flex-col items-center p-2 w-64 border">
+            <input type="text" placeholder="ค่าสนาม/ชั่วโมง" disabled class="w-full"/>
+            <input type="text" id="price_arena_per_hour" class="w-full border-b border-black"/>
+            
+            <input type="text" placeholder="จำนวนชั่วโมง"disabled class="w-full"/>
+            <input type="text" id="price_per_hour" class="w-full border-b border-black"/>
+
+            <input type="text" placeholder="จำนวนคอร์ด" disabled class="w-full"/>
+            <input type="text" id="cort_amount" class="w-full border-b border-black"/>
+
+            <input type="text" placeholder="ลูกละ" disabled class="w-full"/>
+            <input type="text" id="price_per_ball" class="w-full border-b border-black"/>
+
+            <input type="text" placeholder="จำนวนที่ใช้" disabled class="w-full"/>
+            <input type="text" id="ball_total" class="w-full border-b border-black"/>
+
+            <input type="text" placeholder="จำนวนคนเล่น" disabled class="w-full"/>
+            <input type="text" id="total_player" class="w-full border-b border-black"/>
+        </div>
+
+        <!-- ========== RIGHT ==========-->
+        <div class="flex flex-col items-center border p-2 bg-white w-64">
+          <input type="text" placeholder="ราคาค่าสนาม/ชั่วโมง" disabled class="w-full"/>
+          <input type="text" disabled id="ans_arena_price"  class="w-full border-b"/>
+
+          <input type="text" placeholder="ค่าลูก" disabled class="w-full" />
+          <input type="text" disabled id="ans_price_per_ball"  class="w-full border-b"/>
+
+          <input type="text" placeholder="ค่าลูกในแต่ละชั่วโมง" disabled class="w-full "/>
+          <input type="text" id="ball_h_price"  class="w-full border-b" disabled/>
+
+          <input type="text" placeholder="ค่าสนามของ 1คน ต่อ 1ชั่วโมง" disabled class="w-full"/>
+          <input type="text" id="arena_h_price"  class="w-full border-b" disabled/>
+
+          <input type="text" placeholder="ราคารวมในแต่ละชั่วโมง" disabled class="w-full"/>
+          <input type="text" id="all_price"  class="w-full border-b" disabled/>
+
+        </div>
+      </div>
+
+      <!-- ========== BUTTON ==========-->
+      <button class="btn btn-primary mt-5 w-full" onclick="CAL()">Enter</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
